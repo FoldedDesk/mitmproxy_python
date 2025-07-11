@@ -18,8 +18,11 @@ mitmproxy -s main.py --ssl-insecure
     Nothing
 
 
+# 请注意必须满足以下条件：
+~~~
+python>=3.12
+~~~
 
 
-
-Powered by deepSeek\
+Powered by deepSeek \
 Mady by **DeepSeek**&**FoldedDesk**
