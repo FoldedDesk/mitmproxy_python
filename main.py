@@ -59,12 +59,12 @@ class AdvancedLogger:
 
     def _save_complete_log(self, flow, is_request: bool):
         """始终记录所有流量到完整日志"""
-        with open("traffic_log.txt", "a", encoding='utf-8') as f:
+        with open("./log/traffic_log.txt", "a", encoding='utf-8') as f:
             self._write_flow_to_file(f, flow, is_request)
 
     def _save_filtered_log(self, flow, is_request: bool):
         """仅记录匹配流量到过滤日志"""
-        with open("filtered_traffic.txt", "a", encoding='utf-8') as f:
+        with open("./log/filtered_traffic.txt", "a", encoding='utf-8') as f:
             self._write_flow_to_file(f, flow, is_request)
 
     def _write_flow_to_file(self, file_obj, flow, is_request: bool):
